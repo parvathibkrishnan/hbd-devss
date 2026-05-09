@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Diva | Solo Stage 👑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <style>
+        :root {
+            --bts-purple: #6c4ab6;
+            --soft-pink: #f8bbd0;
+            --hot-pink: #ff1493;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #0f0c29, #302b63);
+            color: white;
+            min-height: 100vh;
+            padding: 60px 5% 40px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        h2 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: clamp(2.5rem, 6vw, 4rem); 
+            margin-bottom: 10px;
+            color: var(--soft-pink);
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* Photo Grid */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo-card {
+            background: var(--glass);
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.02);
+            border-color: var(--hot-pink);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+        }
+
+        .photo-caption {
+            padding: 15px 5px;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--soft-pink);
+        }
+
+        .back-nav {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: var(--hot-pink);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            .photo-grid { grid-template-columns: 1fr; }
+            .photo-card img { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="material-symbols-rounded" style="font-size: 3rem; color: var(--hot-pink);">diamond</span>
+        <h2>The Diva</h2>
+        <p class="subtitle">Main Character Energy Only</p>
+    </div>
+
+    <div class="photo-grid">
+        <div class="photo-card">
+            <img src="main-photo.jpeg" alt="Devs Look 1">
+            <div class="photo-caption">"Dreamy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="side-photo.jpeg" alt="Devs Look 2">
+            <div class="photo-caption">"Timeless beauty"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo3.jpeg" alt="Devs Look 3">
+            <div class="photo-caption">"Too real to explain"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo4.jpeg" alt="Devs Look 4">
+            <div class="photo-caption">"Pretty soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo5.jpeg" alt="Devs Look 5">
+            <div class="photo-caption">"Main character energy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo6.jpeg" alt="Devs Look 6">
+            <div class="photo-caption">"Sweetest energy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo7.jpeg" alt="Devs Look 7">
+            <div class="photo-caption">"Divinely aligned"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo8.jpeg" alt="Devs Look 8">
+            <div class="photo-caption">"Graceful"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo9.jpeg" alt="Devs Look 9">
+            <div class="photo-caption">"Dreamy eyes"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo10.jpeg" alt="Devs Look 10">
+            <div class="photo-caption">"Aesthetic by nature"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo11.jpeg" alt="Devs Look 11">
+            <div class="photo-caption">"Golden smiles"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo12.jpeg" alt="Devs Look 12">
+            <div class="photo-caption">"Kindest soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo13.jpeg" alt="Devs Look 13">
+            <div class="photo-caption">"Infinte Glow"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo14.jpeg" alt="Devs Look 14">
+            <div class="photo-caption">"Beyond ordinary"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo15.jpeg" alt="Devs Look 15">
+            <div class="photo-caption">"Sweetest energy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo16.jpeg" alt="Devs Look 16">
+            <div class="photo-caption">"Made of magic"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo17.jpeg" alt="Devs Look 17">
+            <div class="photo-caption">"Effortlessly iconic"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo18.jpeg" alt="Devs Look 18">
+            <div class="photo-caption">"Dreamscape"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo19.jpeg" alt="Devs Look 19">
+            <div class="photo-caption">"Gentle magic"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo20.jpeg" alt="Devs Look 20">
+            <div class="photo-caption">"Forever charming"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo21.jpeg" alt="Devs Look 21">
+            <div class="photo-caption">"Unhinged"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo22.jpeg" alt="Devs Look 22">
+            <div class="photo-caption">"Moonlight girl"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo23.jpeg" alt="Devs Look 23">
+            <div class="photo-caption">"Queen energy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo24.jpeg" alt="Devs Look 24">
+            <div class="photo-caption">"Magical soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo25.jpeg" alt="Devs Look 25">
+            <div class="photo-caption">"Delicate and divine"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo26.jpeg" alt="Devs Look 26">
+            <div class="photo-caption">"Divine feminine"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo27.jpeg" alt="Devs Look 27">
+            <div class="photo-caption">"Unshakable soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo28.jpeg" alt="Devs Look 28">
+            <div class="photo-caption">"Cloud like"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo29.jpeg" alt="Devs Look 29">
+            <div class="photo-caption">"Rare presence"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo30.jpeg" alt="Devs Look 30">
+            <div class="photo-caption">"Cute therapy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo31.jpeg" alt="Devs Look 31">
+            <div class="photo-caption">"Blooming soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo32.jpeg" alt="Devs Look 32">
+            <div class="photo-caption">"Softest strength"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo33.jpeg" alt="Devs Look 33">
+            <div class="photo-caption">"Elegant soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo34.jpeg" alt="Devs Look 34">
+            <div class="photo-caption">"Lovely human"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo35.jpeg" alt="Devs Look 35">
+            <div class="photo-caption">"Angel energy"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo36.jpeg" alt="Devs Look 36">
+            <div class="photo-caption">"Warm like home"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo37.jpeg" alt="Devs Look 37">
+            <div class="photo-caption">"Vintage soul"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo38.jpeg" alt="Devs Look 38">
+            <div class="photo-caption">"Rare gem"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo39.jpeg" alt="Devs Look 39">
+            <div class="photo-caption">"Naturally radiant"</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="photo40.jpeg" alt="Devs Look 40">
+            <div class="photo-caption">"Unwritten poetry"</div>
+        </div>
+
+    </div>
+
+    <div class="back-nav">
+        <a href="vault.html" class="back-btn">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Back to Vault
+        </a>
+    </div>
+
+</body>
+</html>
