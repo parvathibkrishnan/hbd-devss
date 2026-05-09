@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us | Friendship Files 👯‍♀️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <style>
+        :root { --soft-pink: #f8bbd0; --hot-pink: #ff1493; --glass: rgba(255, 255, 255, 0.1); }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: linear-gradient(to bottom, #0f0c29, #302b63); 
+            color: white; 
+            padding: 60px 5%; 
+            text-align: center; 
+        }
+
+        h2 { font-family: 'Playfair Display'; font-size: 3rem; color: var(--soft-pink); margin-bottom: 10px; }
+        
+        .subtitle { letter-spacing: 4px; text-transform: uppercase; opacity: 0.8; font-size: 0.8rem; margin-bottom: 40px; }
+        
+        /* The Masonry Grid Fix */
+        .photo-grid { 
+            columns: 3 280px; /* Creates 3 columns that adjust to 280px on smaller screens */
+            column-gap: 20px;
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .photo-card { 
+            background: var(--glass); 
+            padding: 10px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            transition: 0.3s; 
+            margin-bottom: 20px; /* Space between photos in the same column */
+            break-inside: avoid; /* Keeps the card from splitting between columns */
+            display: inline-block;
+            width: 100%;
+        }
+
+        .photo-card:hover { transform: scale(1.02); border-color: var(--hot-pink); }
+
+        /* Ensuring original image ratios */
+        .photo-card img { 
+            width: 100%; 
+            height: auto; /* Maintains the original image aspect ratio */
+            display: block;
+            border-radius: 15px; 
+        }
+
+        .photo-caption { padding: 15px; font-size: 0.85rem; color: var(--soft-pink); }
+        
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 40px; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            .photo-grid { columns: 2 150px; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <span class="material-symbols-rounded" style="font-size: 3rem; color: var(--hot-pink);">groups</span>
+    <h2>The Friendship Files</h2>
+    <p class="subtitle">The Unintentional 💜</p>
+    
+    <div class="photo-grid">
+        <div class="photo-card"><img src="group1.jpeg"><div class="photo-caption">"Onam"</div></div>
+        <div class="photo-card"><img src="group2.jpeg"><div class="photo-caption">"Latenight noodles"</div></div>
+
+        <div class="photo-card"><img src="group3.jpeg"><div class="photo-caption">"Farewell"</div></div>
+        <div class="photo-card"><img src="group4.jpeg"><div class="photo-caption">"Annual Day"</div></div>
+        <div class="photo-card"><img src="group18.jpeg"><div class="photo-caption">"Study table sleeping"</div></div>
+        <div class="photo-card"><img src="group5.jpeg"><div class="photo-caption">"Trip"</div></div>
+        <div class="photo-card"><img src="group6.jpeg"><div class="photo-caption">"Calls"</div></div>
+        <div class="photo-card"><img src="group7.jpeg"><div class="photo-caption">"Onam"</div></div>
+        <div class="photo-card"><img src="group8.jpeg"><div class="photo-caption">"Trip"</div></div>
+        <div class="photo-card"><img src="group9.jpeg"><div class="photo-caption">"The unintentional one"</div></div>
+        <div class="photo-card"><img src="group10.jpeg"><div class="photo-caption">"Latenight cravings"</div></div>
+        <div class="photo-card"><img src="group11.jpeg"><div class="photo-caption">"Trip"</div></div>
+        <div class="photo-card"><img src="group12.jpeg"><div class="photo-caption">"Trip"</div></div>
+        <div class="photo-card"><img src="group13.jpeg"><div class="photo-caption">"Going for Walk"</div></div>
+        <div class="photo-card"><img src="group14.jpeg"><div class="photo-caption">"Lift"</div></div>
+        <div class="photo-card"><img src="group15.jpeg"><div class="photo-caption">"Onam"</div></div>
+        <div class="photo-card"><img src="group16.jpeg"><div class="photo-caption">"Call time"</div></div>
+        <div class="photo-card"><img src="group17.jpeg"><div class="photo-caption">"Sneaked in a phone"</div></div>    
+        <div class="photo-card"><img src="group19.jpeg"><div class="photo-caption">"Mess hall talks "</div></div>
+
+    </div>
+    
+    <a href="vault.html" class="back-btn">← Back to Vault</a>
+</body>
+</html>
